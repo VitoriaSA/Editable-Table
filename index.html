@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+
+    <link rel="shortcut icon" href="logo.png" />
+    <title>Tabela Editável</title>
+</head>
+
+<body>
+
+    <div class="navbar p-4">
+        <div class="row w-100">
+            <div class="col-md-12 d-flex align-self-center">
+                <img class="pl-4" src="logo.png" alt="logo" name="logo" width="70px" />
+                <div class="col-md-12 d-flex align-self-center">
+                    <h2 class="m-0">Tabela Editável</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row w-100">
+            <div class="col-md-12">
+                <br>
+                <button class="add btn btn-outline-dark pull-right add-row my-3" onclick="addRow()"><i class="fa fa-plus"></i>&nbsp;&nbsp; Adicionar linha</button>
+            </div>
+        </div>
+
+        <div class="row w-100">
+            <div class="col-md-12 table-responsive">
+                <table class="table table-bordered table-hover" id="dataTable">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Idade</th>
+                            <th scope="col">Cidade</th>
+                            <th scope="col">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Leonardo</td>
+                            <td>35</td>
+                            <td>São Paulo</td>
+                            <td>
+                                <input type="button" value="Alterar" class="btn btn-outline-primary edit" onclick="editRow(this)">
+                                <input type="button" value="Salvar" class="btn btn-outline-success save" onclick="saveRow(this)">
+                                <input type="button" value="Deletar" class=" btn btn-outline-danger delete" onclick="deleteRow(this)">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Manoela</td>
+                            <td>21</td>
+                            <td>São Paulo</td>
+                            <td>
+                                <input type="button" value="Alterar" class="btn btn-outline-primary edit" onclick="editRow(this)">
+                                <input type="button" value="Salvar" class="btn btn-outline-success save" onclick="saveRow(this)">
+                                <input type="button" value="Deletar" class="btn btn-outline-danger delete" onclick="deleteRow(this)">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Jean</td>
+                            <td>24</td>
+                            <td>São Paulo</td>
+                            <td>
+                                <input type="button" value="Alterar" class="btn btn-outline-primary edit" onclick="editRow(this)">
+                                <input type="button" value="Salvar" class="btn btn-outline-success save" onclick="saveRow(this)">
+                                <input type="button" value="Deletar" class="btn btn-outline-danger delete" onclick="deleteRow(this)">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
