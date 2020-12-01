@@ -46,7 +46,7 @@ function deleteRow(element) {
     var name = '';
 
     if (row.cells[0].firstElementChild) {
-        name = "uma nova linha";
+        name = "uma linha em edição.";
     } else {
         name = row.cells[0].innerHTML;
     }
